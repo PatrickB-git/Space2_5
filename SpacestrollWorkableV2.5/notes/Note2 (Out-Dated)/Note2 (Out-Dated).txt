@@ -1,0 +1,13 @@
+ATTENTION:
+
+It has come neccesary that the checking for ally and enemy ships in the path of an attack is unsupported, and thus
+must be reworked. Doing so will require an object to be created to quickly check for things along the path and report
+back as soon as done.
+
+This must be done for both players and enemies. In the meantime, it must also be noted that the game is freezing upon pressing
+the end turn button; this will require a reworking as well.
+
+
+REWORK:
+
+Pr

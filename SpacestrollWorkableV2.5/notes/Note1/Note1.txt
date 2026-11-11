@@ -1,0 +1,33 @@
+NEXT:
+
+- Create normal pilot tokens	{Done}
+- Create placeable ships	{Done}
+- Create elite pilot tokens		{Done}
+- Create adaptive hangar slots		{Done}
+- Create player ship viewable (right click)		{Rough Version}
+- Create action meter	{Done}
+- Program ship actions		{Partially Done}
+[Be sure to create a copy for easier time when creating enemies]
+- Create point trackers		{Rough Version}
+- Create point total		{Roug Version}
+- Create enemy ship spawner (copy player ship spawner)	{Done}
+- Create enemy ship to spawn	{Partially Done}
+- create enemy ship viewable (right click) {Rough Version}
+- program enemy ships	{Done?}
+		>Turn Order
+		>Movement/Actions
+- program interaction between player and enemy ships	{Tested}
+
+- program all uses for points	{Buy Ships, (Upgrades); return later}
+- create scaling actions for player and enemy {Done?}
+- create scoring system	 {Incomplete}
+- create player/enemy 'lives' {Will they be 'lives' though?} --(No, they won't.)
+- create player/enemy nametags {Later}
+- create player/enemy icons {Later}
+- create captain avatar {Later}
+- create menu {Later}
+- create menu button {Later}
+- program pilot cycle {Done, temporarily}
+- create upgrades {More or Less}
+- finish basic sprites and stats for all ships {Later / Partially complete}
+- finalize combat and create scenario

@@ -1,0 +1,130 @@
+Cleared:
+- obj_enemy_attack_hitbox
+- obj_enemy_attack_visual
+- obj_enemy_defense_visual
+- menu_buttons
+- obj_elite_#_selectability
+- obj_reserve_#_selectability
+- obj_powerup_activator
+- obj_rail_shell_powerup
+- obj_repair_drone_powerup
+- obj_player_attack_hitbox
+- obj_player_attack_visual
+- obj_player_defense_visual
+- obj_point_total
+- obj_enemy_score_counter
+- obj_player_score_counter
+- obj_highlighting
+- obj_action_tracker
+- obj_combat_judge
+- obj_enemy_nametag
+- obj_player_nametag
+- obj_player_ship_exit
+- obj_shift_view
+- obj_ship_slot_control
+- obj_turn_end
+-
+
+
+Considered:
+- obj_enemy_info_#
+	- Draw event < add functions
+- obj_enemy_ship_spawn
+	- Change spawning to be a function
+		- maybe like in cruxvem
+- obj_player_info_#
+	- Draw event < add functions
+- obj_player_ship_spawn
+	- Change spawning to be a function
+		- maybe like in cruxvem
+- obj_powerup_# / obj_upgrade_#
+	- Reduce global variable usage
+- obj_power_#_count / obj_upgrade_#_rank
+	- consider neccesity?
+	- move effects to Draw GUI on regular power or seperate them
+- obj_point_tracker_#
+	- Reduce global variable usage
+- obj_place_point
+	- Reduce global variable usage
+- obj_wait_control
+	- this might be a source of problems, keep an eye out during debugging.
+
+Required:
+- **obj_enemy_ship**
+	- Create event < move movement directionals to seperate script	[Complete]
+		- figure out what _pull, _clorm and _narm are used for and rename them accordingly	[Complete]
+	- Destroy event < figure out what globals are doing	 [Complete?]
+	- Step event < add functions	 [~Complete~]
+	- Alarms to Change into functions:
+		- Alarm 3	[Complete]
+		- Alarm 4	[Canceled]
+	- Alarm 0 < add description		[Complete]
+	- Alarm 1 < add description		[Complete]
+	- **Alarm 2** (Move Check) < desperately needs functions and scripting		[Complete]
+		- figure out what global._move_x and global._move_y are used and try to make them local		[Ignorable]
+	- Alarm 5 < add description, move elsewhere?	[Complete?]
+	- Alarm 6 < add description		[Complete]
+	- Alarm 7 < add description		[Complete]
+		- figure out a better system?	[If it ain't broke, don't fix it]
+	- Alarm 8 < add description		[Complete?]
+		- figure out a better system?
+	- Alarm 9 < add description		[Complete]
+		- figure out a better system?
+	- Left Pressed < add description	[Complete]
+	- Collision; obj_enemy_attack_hitbox < change to function	[Postponed]
+	- Collision; obj_player_attack_hitbox < change to function(s)	[Postponed]
+	- Collision; obj_player_attack_visual < determine neccesity?	[Probably Unneccesary]
+- obj_enemy_turn_tracker
+	- determine neccesity of object?
+	- Create event < figure out of _lurx and _balk are used for and rename them accordingly
+	- Step event < figure out what the fuck is going on here
+- obj_lament
+	- determine neccesity of object?	[Yes]
+- obj_outlines
+	- reimplement as sprites in a sprite layer	[Fixed]
+- obj_elite_#_token
+	- dial down global variable usage	[~]
+- obj_reserve_#_token
+	- dial down global variable usage [~]
+- obj_anchor_point
+	- Create event < add functions	[Completed]
+	- Step event < add functions	[Postponed]
+- obj_move_point
+	- Create event < add functions	[Postponed]
+	- Step event < add functions	[Postponed]
+- **obj_player_ship**
+	- Create event < add functions
+		- switch(global._pilot_selected) needs to be made more streamline and understandable	[?]
+		- WAY WAY WAY too much global variable usage, tone that down as much as possible.	[~]
+		- switch(_pilot_bonus) needs to made into functions.	[Complete]
+		- Figure out what _clorm and _pull do and rename them accordingly [Complete?]
+	- Step event < add functions	[~Complete~]
+	- Alarms to Change into functions:
+		- Alarm 3	[Complete]
+		- Alarm 7	[Complete]
+	- Alarm 0 < add description		[Complete]
+	- Alarm 2 < determine neccesity?	[Ignorable]
+	- Alarm 5 < add description, add functions	[Postponed, Complete]
+	- Alarm 6 < add description		[Complete]
+	- Alarm 7 < add description?		[Postponed]
+	- **Left Down** event < add dscription [Complete]
+		- needs functions desperately!		[~Complete~]
+	- Left Pressed < add description	[Complete]
+	- Right Pressed < add description	[Complete]
+		- determine functionality?	[Yes]
+	- Collision; obj_enemy_attack_hitbox < change to function(s)	[Postponed]
+	- Collision; obj_player_attack_hitbox < change to function		[Postponed]
+
+[Postponed]
+- obj_slot_#_token
+	- Create event < add functions
+		- change switch(a) to use functions
+	- Left Pressed < reduce glboal variable usage
+	- add functions to reduce alarm usage?
+- obj_value_tracker
+	- determine neccesity of object
+	
+[Keep track of variables that can be transfered to local usage!]
+- **obj_player_variable_storage**
+	- Create event < houses a hell ton of global variables
+		- Reduce global variable usage, look here for what the hell is neccesary and what isn't.

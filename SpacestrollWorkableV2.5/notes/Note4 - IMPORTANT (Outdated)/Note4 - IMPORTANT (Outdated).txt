@@ -1,0 +1,4 @@
+Draw GUI is offplaced when the view is shifted; seperate objects/sprites must be developed to account for this.
+
+you know what else is important? The need to create a contigency where a ship rams into the exit zone so it either-
+-scores or gets bumped.

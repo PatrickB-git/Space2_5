@@ -1,0 +1,23 @@
+-implement attack and defense visuals	[Semi-Complete]
+	{Baseline Implementation; minor tweaking required; no collision effects yet}
+-implement passive bonuses	[In Progress]
+-implement captain details	[Delayed]
+-implement powerup usage	[Part-Complete]
+	{Works as needed for right now, although additional QOL features are planned}
+-create contigency for being knocked out of bounds	[Complete]
+-check if ram will interact with player ship exit	[Checked]
+	{It does, although it may result in ships at the exit not being pushed back}
+-implement nametags		[Fixed~]
+-(raise player fleet size to be more reasonable)	[Fixed]
+-(make a highlighting system when viewing ships?)	[Delayed]
+-Make proper designs for each player accessible ship	[On Paper]
+-Expirement with visual effects on layers and adding particles to the battle field	[Delayed]
+-Replace outlines with individual objects	[Partial/Delayed]
+-change Draw GUI to Draw / create new objects to do so.		[Complete]
+-Create a more realized first fleat and encounter	[]
+>test new Alpha		[Alpha 2] 
+
+v0.0.9
+
+-Account for enemies making it to the player's ship place points
+-fix apparent break when an enemy didn't move based on its alt movement. [Fixed]

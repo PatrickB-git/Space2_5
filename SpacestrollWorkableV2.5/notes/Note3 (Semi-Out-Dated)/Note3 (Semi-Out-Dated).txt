@@ -1,0 +1,14 @@
+Next, make sure to fix the current turn order methods of the enemy ships.
+
+They currently have problems with potential overlap, among other things. 
+
+
+revolve around starting fleet size, minus the current fleet size to check for starting priority when the tracker is created.
+set the priority equal to the current fleet size (before the fleet size is reduced).
+reduce starting fleet size when a ship is destroyed. 
+
+
+REWORK:
+
+-Ships have to able to control current fleet size when they are not destroyed by another ship, but instead destroyed
+upon being scored.

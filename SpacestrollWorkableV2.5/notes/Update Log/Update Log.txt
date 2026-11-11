@@ -1,0 +1,11 @@
+	v 0.1.0
+* Fixed alt enemy movement not being called
+[Details: Enemy movement now consists of an {i < 16} for-loop, rather than two {i < 8} for-loops. There is now a contingency to prevent enemies from moving if it would place them out of bounds.]
+* Fixed small issue where enemy (and player) ships would take damage from ally attack check boxes. They now only trigger damage if the attack was a beam attack.
+
+	v 0.1.1
+* Removed code that deleted player exit points after the first time they were used.
+* Fixed an error when the player tried to move a ship when there were no existing movement points to go to.
+[Add: Other contigencies have been put into place that should make the whole thing fool proof.]
+
+	v0.1.2

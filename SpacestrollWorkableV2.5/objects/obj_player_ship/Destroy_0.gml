@@ -1,0 +1,1 @@
+//global._player_actions_taken -= 1;

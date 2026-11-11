@@ -1,0 +1,1 @@
+inst = instance_nearest(x, y, obj_enemy_ship);

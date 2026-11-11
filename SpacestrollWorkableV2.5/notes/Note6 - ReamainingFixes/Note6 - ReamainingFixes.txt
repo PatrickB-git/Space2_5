@@ -1,0 +1,43 @@
+Required:
+- **obj_enemy_ship**
+	- Step event < add functions	 [~Complete~]
+	- Alarm 5 < add description, move elsewhere?	[Complete?]
+	- Collision; obj_enemy_attack_hitbox < change to function	[Postponed]
+	- Collision; obj_player_attack_hitbox < change to function(s)	[Postponed]
+	- Collision; obj_player_attack_visual < determine neccesity?	[Probably Unneccesary]
+- obj_enemy_turn_tracker
+	- Create event < figure out of _lurx and _balk are used for and rename them accordingly
+	- Step event < figure out what the fuck is going on here
+- obj_elite_#_token
+	- dial down global variable usage	[~]
+- obj_reserve_#_token
+	- dial down global variable usage [~]
+- obj_anchor_point
+	- Step event < add functions	[Postponed]
+- obj_move_point
+	- Create event < add functions	[Postponed]
+	- Step event < add functions	[Postponed]
+- **obj_player_ship**
+	- Create event < add functions
+		- switch(global._pilot_selected) needs to be made more streamline and understandable	[?]
+		- WAY WAY WAY too much global variable usage, tone that down as much as possible.	[~]
+	- Step event < add functions	[~Complete~]
+	- Alarm 5 < add description, add functions	[Postponed, Complete]
+	- Alarm 7 < add description?		[Postponed]
+		- needs functions desperately!		[~Complete~]
+	- Collision; obj_enemy_attack_hitbox < change to function(s)	[Postponed]
+	- Collision; obj_player_attack_hitbox < change to function		[Postponed]
+
+[Postponed]
+- obj_slot_#_token
+	- Create event < add functions
+		- change switch(a) to use functions
+	- Left Pressed < reduce glboal variable usage
+	- add functions to reduce alarm usage?
+- obj_value_tracker
+	- determine neccesity of object
+	
+[Keep track of variables that can be transfered to local usage!]
+- **obj_player_variable_storage**
+	- Create event < houses a hell ton of global variables
+		- Reduce global variable usage, look here for what the hell is neccesary and what isn't.

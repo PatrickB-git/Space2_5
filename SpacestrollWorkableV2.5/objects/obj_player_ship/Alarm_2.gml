@@ -1,0 +1,1 @@
+//_actions_taken += _attack_cost;
